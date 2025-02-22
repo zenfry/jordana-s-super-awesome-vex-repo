@@ -5,11 +5,11 @@ brain = vex.Brain()
 controller = vex.Controller(vex.ControllerType.PRIMARY)
 
 # Initialize motors (two per side for drivetrain, one for conveyor belt)
-left_motor_1 = vex.Motor(vex.Ports.PORT1, vex.GearSetting.RATIO18_1, False)
-left_motor_2 = vex.Motor(vex.Ports.PORT2, vex.GearSetting.RATIO18_1, False)
-right_motor_1 = vex.Motor(vex.Ports.PORT3, vex.GearSetting.RATIO18_1, True)
-right_motor_2 = vex.Motor(vex.Ports.PORT4, vex.GearSetting.RATIO18_1, True)
-conveyor_motor = vex.Motor(vex.Ports.PORT5, vex.GearSetting.RATIO18_1, False)
+left_motor_1 = vex.Motor(vex.Ports.PORT10, vex.GearSetting.RATIO18_1, False)
+left_motor_2 = vex.Motor(vex.Ports.PORT18, vex.GearSetting.RATIO18_1, False)
+right_motor_1 = vex.Motor(vex.Ports.PORT8, vex.GearSetting.RATIO18_1, True)
+right_motor_2 = vex.Motor(vex.Ports.PORT20, vex.GearSetting.RATIO18_1, True)
+conveyor_motor = vex.Motor(vex.Ports.PORT15, vex.GearSetting.RATIO18_1, False)
 
 # Group motors for easier drivetrain control
 left_drive = vex.MotorGroup(left_motor_1, left_motor_2)
